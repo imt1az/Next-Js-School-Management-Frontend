@@ -1,5 +1,7 @@
+import Announcements from "@/components/Announcements"
 import AttendentChart from "@/components/AttendentChart"
 import CountChart from "@/components/CountChart"
+import EventCalender from "@/components/EventCalender"
 import FinanceChart from "@/components/FinanceChart"
 import UserCard from "@/components/UserCard"
 
@@ -31,8 +33,9 @@ const AdminPage = () => {
         </div>
       </div>
       {/* Right */}
-      <div className="w-full lg:w-1/3">
-        R
+      <div className="w-full lg:w-1/3 flex-col gap-8">
+        <EventCalender/>
+        <Announcements/>
       </div>
     </div>
   )
